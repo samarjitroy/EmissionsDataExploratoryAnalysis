@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 Fine particulate matter (PM2.5) is an ambient air pollutant for which there is strong evidence that it is harmful to human health. In the United States, the Environmental Protection Agency (EPA) is tasked with setting national ambient air quality standards for fine PM and for tracking the emissions of this pollutant into the atmosphere. Approximatly every 3 years, the EPA releases its database on emissions of PM2.5. This database is known as the National Emissions Inventory (NEI). You can read more information about the NEI at the EPA National Emissions Inventory web site.
 
@@ -16,17 +16,17 @@ The zip file contains two files:
 
 
 
-##A (Plot1)
+###A (Plot1)
 
-#Analysis
+####Analysis
 Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
-#Data Selection Method
+####Data Selection Method
 
 with(NIE, tapply(Emissions, year, sum, na.rm = T))  - where NIE is Data Frame loaded from summarySCC_PM25.rds
 
 
-#The Plot1 script (plot1.R) does the following:
+####The Plot1 script (plot1.R) does the following:
 
 1. Download and unzip data to the Current Working Directory
 2. Load data using readRDS(): 
@@ -36,7 +36,7 @@ with(NIE, tapply(Emissions, year, sum, na.rm = T))  - where NIE is Data Frame lo
 4. Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008
 5. Save the plot to plot1.png
 
-# Running the script
+#### Running the script
 To run the script, source `plot1.R`. After running, you will see the following output as the script works:
 ```
 [Wed Feb 24 22:28:05 2016 ] Exploratory Data Analysis Project.
@@ -56,18 +56,18 @@ To run the script, source `plot1.R`. After running, you will see the following o
 <a href="plot1.R">Click here to view <b>Code plot1.R</b></a>
 
 
-##B (Plot2)
+###B (Plot2)
 
-#Analysis
+####Analysis
 
 Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
 
-#Data Selection Method
+####Data Selection Method
 1. subset(NIE,fips == "24510")  - where NIE is Data Frame loaded from summarySCC_PM25.rds
 2. with(BaltimoreCityDF , tapply(Emissions, year, sum, na.rm = T)) - Where BaltimoreCityDF is the output from 1.
 
 
-#The Plot2 script (plot1.R) does the following:
+####The Plot2 script (plot1.R) does the following:
 
 1. Download and unzip data to the Current Working Directory
 2. Load data using readRDS(): 
@@ -77,7 +77,7 @@ Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips 
 4. Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008
 5. Save the plot to plot1.png
 
-# Running the script
+#### Running the script
 To run the script, source `plot2.R`. After running, you will see the following output as the script works:
 ```
 [Thu Feb 25 09:29:41 2016 ] Exploratory Data Analysis Project.
