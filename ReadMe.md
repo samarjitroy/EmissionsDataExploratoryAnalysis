@@ -81,16 +81,16 @@ Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips 
 #### Running the script
 To run the script, source `plot2.R`. After running, you will see the following output as the script works:
 ```
-[Thu Feb 25 09:29:41 2016 ] Exploratory Data Analysis Project.
-[Thu Feb 25 09:29:41 2016 ] Assignment: Course Project 2
-[Thu Feb 25 09:29:41 2016 ] Author: Samarjit Roy.
-[Thu Feb 25 09:29:41 2016 ] 
-[Thu Feb 25 09:29:41 2016 ] if current directory does not have data subdir, create one...completed.
-[Thu Feb 25 09:29:41 2016 ] download zip file from the source...completed.
-[Thu Feb 25 09:29:41 2016 ] if zip file exists, unzip with overwrite..completed.
-[Thu Feb 25 09:29:42 2016 ] Load  PM2.5 Emissions Data : summarySCC_PM25.rds .....completed.
-[Thu Feb 25 09:30:07 2016 ] Load  Source Classification Code Table : Source_Classification_Code.rds .....completed.
-[Thu Feb 25 09:30:08 2016 ] Ploting for PM2.5 decreased in the Baltimore City, Maryland (1999 to 2008) on device(plot2.png): 2 ...completed.
+[Thu Feb 25 17:43:36 2016 ] Exploratory Data Analysis Project.
+[Thu Feb 25 17:43:36 2016 ] Assignment: Course Project 2
+[Thu Feb 25 17:43:36 2016 ] Author: Samarjit Roy.
+[Thu Feb 25 17:43:36 2016 ] 
+[Thu Feb 25 17:43:36 2016 ] if current directory does not have data subdir, create one...completed.
+[Thu Feb 25 17:43:36 2016 ] download zip file from the source...completed.
+[Thu Feb 25 17:43:36 2016 ] if zip file exists, unzip with overwrite..completed.
+[Thu Feb 25 17:43:36 2016 ] Load  PM2.5 Emissions Data : summarySCC_PM25.rds .....completed.
+[Thu Feb 25 17:44:01 2016 ] Load  Source Classification Code Table : Source_Classification_Code.rds .....completed.
+[Thu Feb 25 17:44:02 2016 ] Ploting for PM2.5 decreased in the Baltimore City, Maryland (1999 to 2008) on device(plot2.png): 2 ...completed.
 
 ```
 

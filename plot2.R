@@ -10,7 +10,6 @@
 #
 #
 #
-
 p <- function(...) {
   d <- format(Sys.time(), "[%a %b %d %H:%M:%S %Y ]")
   cat(d, ...)
