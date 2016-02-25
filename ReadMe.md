@@ -39,22 +39,18 @@ with(NIE, tapply(Emissions, year, sum, na.rm = T))  - where NIE is Data Frame lo
 # Running the script
 To run the script, source `plot1.R`. After running, you will see the following output as the script works:
 ```
-[Sat Feb 06 20:45:01 2016 ] Exploratory Data Analysis.
-[Sat Feb 06 20:45:01 2016 ] Assignment: 1.
-[Sat Feb 06 20:45:01 2016 ] Author: Samarjit Roy.
-[Sat Feb 06 20:45:01 2016 ] Plot 1: Global Active Power.
-[Sat Feb 06 20:45:01 2016 ] 
-[Sat Feb 06 20:45:01 2016 ] if current directory does not have data subdir, create one...completed.
-[Sat Feb 06 20:45:01 2016 ] download zip file from the source...completed.
-[Sat Feb 06 20:45:01 2016 ] if zip file exists, unzip with overwrite..completed.
-[Sat Feb 06 20:45:03 2016 ] Finding Last row number for Date '2007-02-01'  '2007-02-02'.....completed.
-[Sat Feb 06 20:45:12 2016 ] Load Data into Data Frame with limited rows( 69517 ) from the lardge file..completed.
-[Sat Feb 06 20:45:13 2016 ] convert date and time variables to Date/Time class...completed.
-[Sat Feb 06 20:45:14 2016 ] only use data from the dates 2007-02-01 and 2007-02-02...completed.
-[Sat Feb 06 20:45:14 2016 ] Set Plot Device to plot1.p as 480x480...completed.
-[Sat Feb 06 20:45:14 2016 ] Creating Histogram on device: 2 ...completed.
-[Sat Feb 06 20:45:14 2016 ] Closing current device: 2 ....completed.
+[Wed Feb 24 22:28:05 2016 ] Exploratory Data Analysis Project.
+[Wed Feb 24 22:28:05 2016 ] Assignment: Course Project 2
+[Wed Feb 24 22:28:05 2016 ] Author: Samarjit Roy.
+[Wed Feb 24 22:28:05 2016 ] 
+[Wed Feb 24 22:28:05 2016 ] if current directory does not have data subdir, create one...completed.
+[Wed Feb 24 22:28:05 2016 ] download zip file from the source...completed.
+[Wed Feb 24 22:28:05 2016 ] if zip file exists, unzip with overwrite..completed.
+[Wed Feb 24 22:28:05 2016 ] Load  PM2.5 Emissions Data : summarySCC_PM25.rds .....completed.
+[Wed Feb 24 22:28:23 2016 ] Load  Source Classification Code Table : Source_Classification_Code.rds .....completed.
+[Wed Feb 24 22:28:25 2016 ] Ploting for PM2.5 decreased in the United States (1999 to 2008) on device(plot1.png): 2 ...completed.
 ```
 
 ![plot1](plot1.png)
 
+<a href="plot1.R">Code plot1.R</a>
