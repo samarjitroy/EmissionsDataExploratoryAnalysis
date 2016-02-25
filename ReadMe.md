@@ -16,7 +16,7 @@ The zip file contains two files:
 
 
 
-##A
+##A (Plot1)
 
 #Analysis
 Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
@@ -53,4 +53,48 @@ To run the script, source `plot1.R`. After running, you will see the following o
 
 ![plot1](plot1.png)
 
-<a href="plot1.R">Code plot1.R</a>
+<a href="plot1.R">Click here to view <b>Code plot1.R</b></a>
+
+
+##B (Plot2)
+
+#Analysis
+
+Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
+
+#Data Selection Method
+1. subset(NIE,fips == "24510")  - where NIE is Data Frame loaded from summarySCC_PM25.rds
+2. with(BaltimoreCityDF , tapply(Emissions, year, sum, na.rm = T)) - Where BaltimoreCityDF is the output from 1.
+
+
+#The Plot2 script (plot1.R) does the following:
+
+1. Download and unzip data to the Current Working Directory
+2. Load data using readRDS(): 
+	* PM2.5 Emissions Data (summarySCC_PM25.rds) to NEI 
+	* Source Classification Code Table (Source_Classification_Code.rds) to SCC
+3. Extracts the total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008. 
+4. Using the base plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008
+5. Save the plot to plot1.png
+
+# Running the script
+To run the script, source `plot2.R`. After running, you will see the following output as the script works:
+```
+[Thu Feb 25 09:29:41 2016 ] Exploratory Data Analysis Project.
+[Thu Feb 25 09:29:41 2016 ] Assignment: Course Project 2
+[Thu Feb 25 09:29:41 2016 ] Author: Samarjit Roy.
+[Thu Feb 25 09:29:41 2016 ] 
+[Thu Feb 25 09:29:41 2016 ] if current directory does not have data subdir, create one...completed.
+[Thu Feb 25 09:29:41 2016 ] download zip file from the source...completed.
+[Thu Feb 25 09:29:41 2016 ] if zip file exists, unzip with overwrite..completed.
+[Thu Feb 25 09:29:42 2016 ] Load  PM2.5 Emissions Data : summarySCC_PM25.rds .....completed.
+[Thu Feb 25 09:30:07 2016 ] Load  Source Classification Code Table : Source_Classification_Code.rds .....completed.
+[Thu Feb 25 09:30:08 2016 ] Ploting for PM2.5 decreased in the Baltimore City, Maryland (1999 to 2008) on device(plot2.png): 2 ...completed.
+
+```
+
+![plot2](plot2.png)
+
+<a href="plot2.R">Click here to view <b>Code plot2.R</b></a>
+
+
